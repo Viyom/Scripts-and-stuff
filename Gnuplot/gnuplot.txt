@@ -1,0 +1,15 @@
+set style data lines
+set autoscale
+
+set xtics 10
+set ytics 20
+
+set xrange [0:100]
+set yrange [0:220]
+
+set xlabel "Time ( in Seconds )"
+set ylabel "Queue Length ( in Packets )"
+
+plot "ns3.plotme" using 1:2 title "ns-3 model",\
+"constant.plotme" using 1:2 title "50 packets"
+
