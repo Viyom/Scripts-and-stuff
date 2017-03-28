@@ -29,6 +29,7 @@ while (<DATA>) {
 	if ($x[1]-$clock > $granularity)
 	{
 		$throughput = $sum / ($x[1] - $clock);
+		$throughput = $throughput * 8.0/(1024.0*1024.0);
 		print STDOUT "$x[1] $throughput\n";
 		$clock = $x[1];
 		$sum = 0;
@@ -37,6 +38,7 @@ while (<DATA>) {
 
 
 $throughput = $sum / ($x[1] - $clock);
+$throughput = $throughput * 8.0/(1024.0*1024.0);
 print STDOUT "$x[1] $throughput\n";
 $clock = $x[1];
 $sum = 0;
