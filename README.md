@@ -9,3 +9,6 @@ To run CheckStyle:  ./utils/check-style.py --level=3 --in-place -f src/path/file
 ### Throughput: perl throughput.pl filename.tr 6 0.1 > output.plotme
 - 6: end node
 - 0.1: granularity
+
+## ns-3
+### Throughput: python calculateTP.py file1.pcap file2.pcap file3.pcap 
