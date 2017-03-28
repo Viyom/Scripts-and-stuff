@@ -12,4 +12,4 @@ To run CheckStyle:  ./utils/check-style.py --level=3 --in-place -f src/path/file
 
 ## ns-3
 ### Throughput: python calculateTP.py file1.pcap file2.pcap file3.pcap 
-- Prerequisites: install tshark
+- Prerequisites: install tshark using `sudo apt-get install tshark`
