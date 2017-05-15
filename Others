@@ -1,0 +1,2 @@
+For getting all the qdel-goodpuy graphs out with their respective scenario names:
+          for subdir in *; do mv $subdir/graph/qdel-goodput.png $subdir.png; done;
