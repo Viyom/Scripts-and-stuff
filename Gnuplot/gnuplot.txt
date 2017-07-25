@@ -1,15 +1,12 @@
-set style data lines
+set style data ls 2
 set autoscale
 
-set xtics 10
-set ytics 20
+set xrange [1:8]
+set yrange [550:600]
 
-set xrange [0:100]
-set yrange [0:220]
+set xlabel "Copies"
+set ylabel "Time (in seconds)"
 
-set xlabel "Time ( in Seconds )"
-set ylabel "Queue Length ( in Packets )"
-
-plot "ns3.plotme" using 1:2 title "ns-3 model",\
-"constant.plotme" using 1:2 title "50 packets"
+plot "base.plotme" using 1:2 title "Base",\
+"peak.plotme" using 1:2 title "Peak"
 
