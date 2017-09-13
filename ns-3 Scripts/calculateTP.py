@@ -1,3 +1,5 @@
+# This program is used to plot throughput calculation from pcap file 
+
 import sys
 import os
 
