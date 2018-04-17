@@ -1,0 +1,27 @@
+Subscibe to ns-developers mailing list (ns-developers@isi.edu) first in order
+to announce your review request immediately after uploading it for review.
+Follow these steps to make ns-3 code-review request for the first time:
+
+1) Clone a new ns-3-dev repo using mercurial.
+   Command: hg clone http://code.nsnam.org/ns-3-dev
+
+2) Add all the "required" code you want to upload for review.
+   Check if only the required files have been modified using the following command:
+   hg status
+   "DO NOT COMMIT THE FILES THAT YOU HAVE ADDED"
+
+3) Download upload.py from the following link and paste it in your ns-3-dev folder:
+   http://codereview.appspot.com/static/upload.py
+
+4) Make sure you are connected to internet by external network (not NITK).
+   Type the following command:
+   python upload.py  --oauth2 --rev=NS3_REV_NUMBER --cc=ns-3-reviews@googlegroups.com
+   Here, NS3_REV_NUMBER will be the changeset number of your ns-3-dev
+
+5) Go to https://codereview.appspot.com/ and search for your issue using your
+   mailID and update its description.
+
+6) Send a mail to ns-developers mailing list to announce your review request.
+
+If you want to update the code in existing issue use the following command:
+   python upload.py  --oauth2 --rev=NS3_REV_NUMBER --issue=ISSUE_NUMBER --cc=ns-3-reviews@googlegroups.com
